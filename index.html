@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1><a href="#"><img src="image/portfolio.png" alt="My Portfolio"></a></h1>
+</header>
+
+<button id="scrollToTopBtn" title="ページのトップへ戻る">↑</button>
+<script>
+  window.onscroll = function() {
+    const btn = document.getElementById("scrollToTopBtn");
+    btn.style.display = (document.documentElement.scrollTop > 100) ? "block" : "none";
+  };
+  document.getElementById("scrollToTopBtn").onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+<nav class="center-nav">
+  <ul>
+    <li><a href="#section1">ABOUT ME</a></li>
+    <li><a href="#section2">WORKS</a></li>
+    <li><a href="#section3">STRENGTH</a></li>
+  </ul>
+</nav>
+
+<section id="section1" class="section1">
+  <h2>ABOUT ME</h2>
+  <p class="about">こんにちは！<br>
+  ポートフォリオをご覧いただきありがとうございます。<br>
+  もともとは携帯電話の販売スタッフとして働いていましたが、<br>
+  IT業界に興味を持ってプログラミングを学び始めました。<br>
+  自分で考えたものがちゃんと動くと、<br>
+  本当に楽しくてやりがいを感じます。<br>
+  これからは、使ってくれる人のことを<br>
+  大切にしたものづくりをしていきたいなと思っています。</p>
+</section>
+
+<section id="section2">
+  <h2>WORKS</h2>
+  <div class="container">
+
+    <!-- ECサイト -->
+    <div class="works">
+      <div class="work-image">
+        <img src="image/shopping.jpg" alt="EC画像">
+        <div class="image-text">ECサイト</div>
+      </div>
+      <div class="work">
+        <h3>アプリケーション詳細</h3>
+        <p class="work-text">
+          ユーザー登録、ログイン・ログアウト、ユーザー情報の編集、商品追加、注文処理、注文履歴管理、注文確認メールの送信など、Webショップに必要な基本機能を備えた擬似的なECサイトをチームで開発しました。
+          Webブラウザ上で動作し、ユーザー情報・商品情報・注文履歴などのデータはデータベースで管理しています。<br>
+          データベースとの連携処理をはじめ、CSSによるデザイン調整、商品一覧からカートへの追加機能、および購入確認画面の実装を担当しました。
+          ➞<a href="https://github.com/Ni-iii/Shop.git" class="GitHub">GitHub</a>
+        </p>
+        <h3>アプリケーション概要</h3>
+        <p class="work-text">
+          ・使用言語：Java, JavaScript, HTML, CSS<br>
+          ・使用技術：Eclipse, PostgreSQL, JSP, サーブレット<br>
+          ・プログラム本数：69<br>
+          ・実行環境：webブラウザ<br>
+          ・開発人数：チーム開発(4人)
+        </p>
+      </div>
+    </div>
+
+    <!-- 辞書アプリ -->
+    <div class="works">
+      <div class="work-image">
+        <img src="image/book.jpg" alt="本画像">
+        <div class="image-text">辞書</div>
+      </div>
+      <div class="work">
+        <h3>アプリケーション詳細</h3>
+        <p class="work-text">
+          本アプリケーションは、英単語を検索し、日本語の意味を表示する簡易的な英和辞書Webアプリケーションです。<br>
+          データベースには辞書データが登録されており、ユーザーはWebブラウザ上から単語検索を行うことができます。
+          ➞<a href="https://github.com/Ni-iii/dictionary.git" class="GitHub">GitHub</a>
+        </p>
+        <h3>アプリケーション概要</h3>
+        <p class="work-text">
+          ・使用言語：Java, HTML<br>
+          ・使用技術：Eclipse, PostgreSQL, JSP, TXTファイル読込処理<br>
+          ・プログラム本数：4<br>
+          ・実行環境：WEBブラウザ<br>
+          ・開発人数：個人
+        </p>
+      </div>
+    </div>
+
+    <!-- 郵便番号検索 -->
+    <div class="works">
+      <div class="work-image">
+        <img src="image/post.jpg" alt="郵便画像">
+        <div class="image-text">郵便番号検索</div>
+      </div>
+      <div class="work">
+        <h3>アプリケーション詳細</h3>
+        <p class="work-text">
+          CSVファイルに保存された全国の郵便番号データを元に、郵便番号または住所から該当する情報を検索できるデスクトップアプリケーションをJavaで作成しました。<br>
+          ユーザーは郵便番号または都道府県・市区町村名を指定して検索を行うことができ、検索結果は指定件数ごとに表示され、件数が多い場合はページ送りに対応しています。<br>
+          検索結果は条件に応じて並び替えられ、表示継続や再検索にも対応しています。
+          ➞<a href="https://github.com/Ni-iii/PostalCodeFinder.git" class="GitHub">GitHub</a>
+        </p>
+        <h3>アプリケーション概要</h3>
+        <p class="work-text">
+          ・使用言語：Java<br>
+          ・使用技術：Eclipse, CSVファイル読込処理<br>
+          ・プログラム本数：4<br>
+          ・実行環境：コンソール<br>
+          ・開発人数：個人
+        </p>
+      </div>
+    </div>
+
+    <!-- BlackJack -->
+    <div class="works">
+      <div class="work-image">
+        <img src="image/card_bj.jpg" alt="BJ画像">
+        <div class="image-text">BlackJack</div>
+      </div>
+      <div class="work">
+        <h3>アプリケーション詳細</h3>
+        <p class="work-text">
+          コンソール上で動作するブラックジャックゲームをJavaで制作しました。<br>
+          プレイヤーとCPU（Computer）で対戦し、チップを賭けながらブラックジャックのルールで勝敗を決めます。<br>
+          カードの配布や得点計算、シャッフル、勝敗判定、チップの増減など、ゲームの一連の流れをクラス設計と継承を用いて実装しています。<br>
+          ゲームの進行にあわせて手札表示や再プレイ、ゲームオーバーなどの分岐もあり、実際に遊べる仕様となっています。
+          ➞<a href="https://github.com/Ni-iii/BlackJack.git" class="GitHub">GitHub</a>
+        </p>
+        <h3>アプリケーション概要</h3>
+        <p class="work-text">
+          ・使用言語：Java<br>
+          ・使用技術：Eclipse<br>
+          ・プログラム本数：6<br>
+          ・実行環境：コンソール<br>
+          ・開発人数：個人
+        </p>
+      </div>
+    </div>
+
+    <!-- High & Low -->
+    <div class="works">
+      <div class="work-image">
+        <img src="image/card_h&l.jpg" alt="H&L画像">
+        <div class="image-text">High＆Low</div>
+      </div>
+      <div class="work">
+        <h3>アプリケーション詳細</h3>
+        <p class="work-text">
+          本作品は、BlackJackのプログラムをもとに、High＆Low形式のカードゲームとして再構築したものです。<br>
+          プレイヤーとコンピュータがカードを1枚ずつ引き、次に引くカードが高いか低いかを予想して、所持チップを賭けていきます。<br>
+          勝利時にはダブルアップの選択肢を用意し、よりリスクとリターンのあるゲーム性を実現しました。
+          ➞<a href="https://github.com/Ni-iii/High-Low.git" class="GitHub">GitHub</a>
+        </p>
+        <h3>アプリケーション概要</h3>
+        <p class="work-text">
+          ・使用言語：Java<br>
+          ・使用技術：Eclipse<br>
+          ・プログラム本数：6<br>
+          ・実行環境：コンソール<br>
+          ・開発人数：個人
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="section3">
+  <h2>STRENGTH</h2>
+  <h4>1. 公平性</h4>
+  <p class="strength">あなたは、人々を平等に扱うことを強く意識しています。<br>
+  明確なルールを定め、それに従うことで、世界のすべての人を平等に扱おうとします。</p>
+  <h4>2. 親密性</h4>
+  <p class="strength">あなたは、他の人との親密な人間関係を好みます。<br>
+  目標達成のために友人と努力することから、大きな満足感を得ます。</p>
+  <h4>3. 調和性</h4>
+  <p class="strength">あなたは合意を求める人です。<br>
+  対立を好まず、それよりも合意点を探ります。</p>
+  <h4>4. 慎重さ</h4>
+  <p class="strength">あなたは、意思決定や選択する際に細心の注意を払います。<br>
+  目の前に立ちはだかる障壁を予測します。</p>
+  <h4>5. 適応性</h4>
+  <p class="strength">あなたは、流れにまかせて行動することを好みます。<br>
+  状況をあるがままに受け入れ、日々の積み重ねによって未来見出す、「今」を生きる傾向があります。</p>
+</section>
+
+<footer>
+  <p>© 2025 My Portfolio. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
