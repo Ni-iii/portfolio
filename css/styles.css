@@ -241,10 +241,10 @@ footer {
   }
   
 	#scrollToTopBtn {
-    font-size: 25px;
-	width: 100px;
-  	height: 100px;
-    bottom: 30px;
-    right: 30px;
+    font-size: 50px;
+	width: 300px;
+  	height: 300px;
+    bottom: 50px;
+    right: 50px;
   }
 }
