@@ -215,45 +215,49 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 10px 0;
-  }
+header {
+	flex-direction: column;
+	padding: 10px 0;
+}
   
-  .center-nav ul {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
+.center-nav ul {
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
 
-  .center-nav li {
+.center-nav li {
     flex: 1;
     text-align: center;
-  }
+}
 
-  .center-nav a {
+.center-nav a {
     padding: 10px 5px;
     font-size: 0.9em;
-  }
+}
 
-  .image-text {
+.image-text {
     font-size: 1em;
     padding: 10px 15px;
-  }
+}
 
-  .work-image img {
+.work-image img {
     height: 200px;
-  }
+}
 
-  section {
+section {
     width: 95%;
     margin: 20px auto;
-  }
+}
   
-	#scrollToTopBtn {
+.ex {
+    text-align: left;
+}
+  
+#scrollToTopBtn {
     font-size: 20px;
 	width: 100px;
   	height: 100px;
     bottom: 30px;
     right: 30px;
-  }
+}
 }
